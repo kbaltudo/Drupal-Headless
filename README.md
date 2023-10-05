@@ -1,82 +1,36 @@
-# Altudo Rating Review
-This Application is build for give the rating for each employee and 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Technical Stack
-- NPM & Node installed
-- Git should be installed
-- 
+## Getting Started
 
-git remote set-url origin ssh://git@github.com:RahulYadav-Altudo/strapi.git
+First, run the development server:
 
-## Setup Project 
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-Clone this repository with command   `git clone https://github.com/RahulYadav-Altudo/AltudoRatingReview.git`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Backend
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-Go into the folder run this command/go into this command
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-`cd backend/`
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-Copy example environment variable file to `.env` with below command
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-`cp .env.example .env`
+## Learn More
 
-To install all packages run below command
+To learn more about Next.js, take a look at the following resources:
 
-`npm install`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-`npm run develop`
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Your backend server will run on this URL
+## Deploy on Vercel
 
-`http://localhost:1337/`
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Frontend
-
-For Frontend we have NextJS
-
-Redirect to the fronend
-
-`cd fronend/`
-
-Copy example environment variable file to `.env` with below command
-
-`cp .env.example .env`
-
-### Next Authentication
-
-For NextAuth we have run the command: (To run this command you should have openssl installed on your system)
-
-`openssl rand -base64 32`
-
-Add the value in your .env.local file
-
-`NEXTAUTH_SECRET=<ABOVE_GENERATED_SECRETE>`
-
-`NEXTAUTH_URL=http://localhost:3000`
-For Dev you can use base URL for NextAUTH
-For more information about the nextAuth you can see [here](https://next-auth.js.org/configuration/options)
-
-To install all packages run below command
-
-`npm install`
-
-`npm run dev`
-
-Your fronend server will run on this URL
-
-`http://localhost:3000/`
-
-
-For information you can see the documentation of 
-
-Strapi 👉 [Strapi v4 developer documentation](https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html)
-
-NextJS 👉 [Next.js documentation](https://nextjs.org/docs/getting-started)
-
-
-// api testin tool 
-postman
-thunder client
-insomnia
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
